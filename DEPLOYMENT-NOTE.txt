@@ -1,0 +1,6 @@
+Logic Cat Office V2 clean deployment
+
+1. Upload the CONTENTS of this folder to the root of the GitHub repository.
+2. This package intentionally contains no package-lock.json.
+3. .npmrc forces npm to use https://registry.npmjs.org/.
+4. In Vercel, redeploy without using the previous build cache.
