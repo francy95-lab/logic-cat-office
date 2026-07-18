@@ -57,6 +57,7 @@ function scrollToSection(id) {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [archiveIndex, setArchiveIndex] = useState(0);
+  const [isMobileHero, setIsMobileHero] = useState(() => window.matchMedia('(max-width: 768px)').matches);
   const [time, setTime] = useState('');
   const [employeeIndex, setEmployeeIndex] = useState(0);
   const [officeMood, setOfficeMood] = useState('STABLE');
@@ -74,6 +75,18 @@ function App() {
     setOfficeMood(officeMoods[Math.floor(Math.random() * officeMoods.length)]);
     setFish(8 + Math.floor(Math.random() * 21));
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const mobileHeroQuery = window.matchMedia('(max-width: 768px)');
+    const updateHeroMedia = () => setIsMobileHero(mobileHeroQuery.matches);
+    updateHeroMedia();
+    if (mobileHeroQuery.addEventListener) mobileHeroQuery.addEventListener('change', updateHeroMedia);
+    else mobileHeroQuery.addListener(updateHeroMedia);
+    return () => {
+      if (mobileHeroQuery.removeEventListener) mobileHeroQuery.removeEventListener('change', updateHeroMedia);
+      else mobileHeroQuery.removeListener(updateHeroMedia);
+    };
   }, []);
 
   const shuffleEmployee = () => {
@@ -111,9 +124,13 @@ function App() {
       </header>
 
       <section id="home" className="hero section-dark">
-        <video className="hero-video" autoPlay muted loop playsInline poster="/assets/hero-cat.jpg">
-          <source src="/assets/hero-loop.mp4" type="video/mp4" />
-        </video>
+        {isMobileHero ? (
+          <img className="hero-mobile-art" src="/assets/hero-cat.jpg" alt="" aria-hidden="true" />
+        ) : (
+          <video className="hero-video" autoPlay muted loop playsInline poster="/assets/hero-cat.jpg">
+            <source src="/assets/hero-loop.mp4" type="video/mp4" />
+          </video>
+        )}
         <div className="hero-overlay"></div>
         <div className="hero-grain"></div>
         <div className="hero-scan"></div>
