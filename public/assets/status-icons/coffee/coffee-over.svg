@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Overflowing coffee cup archive drawing</title>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 57h72v54a15 15 0 0 1-15 15H53a15 15 0 0 1-15-15V57Z"/>
+    <path d="M110 69h8c15 0 17 27 0 30h-8M27 132h101M50 47c-8-10 7-13 0-24M75 47c-9-10 7-14 0-25M99 47c-8-10 7-13 0-24"/>
+    <path d="M38 64c16-9 55 8 72-1M45 62v49a9 9 0 0 0 9 9h41a9 9 0 0 0 9-9V65"/>
+    <path d="M107 64c5 9-2 13 3 22 4-8 9-14 2-22" fill="#111"/>
+    <path d="M39 66c16-7 54 7 70-1v46a14 14 0 0 1-14 14H53a14 14 0 0 1-14-14V66Z" fill="#111" stroke="none"/>
+  </g>
+</svg>

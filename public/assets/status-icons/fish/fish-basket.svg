@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Fish basket archive drawing</title>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 72h100l-10 60H40L30 72Z"/>
+    <path d="M43 72c8-42 66-42 74 0M48 88h64M45 104h70M42 120h76M56 73l-5 59M77 73l-1 59M99 73l4 59"/>
+    <path d="M43 64c12-18 33-19 48-4l10-8-2 13 3 12-11-7c-15 12-35 9-48-6Z"/>
+    <circle cx="55" cy="62" r="2" fill="#111"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Single fish archive drawing</title>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27 80c22-30 62-37 93-10l19-15-4 26 4 25-20-15c-29 25-70 18-92-11Z"/>
+    <path d="M76 54c5 10 5 43 0 52M44 74c8-5 16-6 24-2M44 87c8 4 16 5 24 1"/>
+    <circle cx="48" cy="78" r="2.5" fill="#111"/>
+    <path d="M91 61c7-12 15-18 23-18l-1 20M90 98c8 11 16 16 24 16l-2-19"/>
+  </g>
+</svg>

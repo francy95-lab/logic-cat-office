@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
+import OfficeStatus from './components/OfficeStatus';
 import './styles.css';
 
 const navItems = [
@@ -48,8 +49,6 @@ const randomEmployees = [
   { id: 'UC-499', name: '午睡排期主管', dept: '时间资源部', mood: '日程已满', salary: '每日 18 小时带薪睡眠', skill: '协调全天所有休息时段' },
 ];
 
-const officeMoods = ['STABLE', 'CHAOTIC', 'FISH EMERGENCY', 'LOW BATTERY'];
-
 function scrollToSection(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -60,8 +59,6 @@ function App() {
   const [isMobileHero, setIsMobileHero] = useState(() => window.matchMedia('(max-width: 768px)').matches);
   const [time, setTime] = useState('');
   const [employeeIndex, setEmployeeIndex] = useState(0);
-  const [officeMood, setOfficeMood] = useState('STABLE');
-  const [fish, setFish] = useState(12);
   const year = useMemo(() => new Date().getFullYear(), []);
   const randomEmployee = randomEmployees[employeeIndex];
 
@@ -72,8 +69,6 @@ function App() {
     update();
     const timer = setInterval(update, 1000);
     setEmployeeIndex(Math.floor(Math.random() * randomEmployees.length));
-    setOfficeMood(officeMoods[Math.floor(Math.random() * officeMoods.length)]);
-    setFish(8 + Math.floor(Math.random() * 21));
     return () => clearInterval(timer);
   }, []);
 
@@ -249,12 +244,7 @@ function App() {
         </div>
       </section>
 
-      <section className="status-section section-light">
-        <div className="shell status-head"><p className="eyebrow">CURRENT OFFICE STATUS / 彩蛋</p><span>LIVE DATA, PROBABLY UNRELIABLE</span></div>
-        <div className="shell status-grid">
-          <div><span>COFFEE LEVEL</span><b>98%</b></div><div><span>FISH INVENTORY</span><b>{fish}</b></div><div><span>EMPLOYEE MOOD</span><b>{officeMood}</b></div><div><span>OPEN CASES</span><b>27</b></div>
-        </div>
-      </section>
+      <OfficeStatus />
 
       <section id="enter" className="enter-section section-dark">
         <div className="enter-grain"></div>

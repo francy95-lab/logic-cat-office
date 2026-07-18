@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Low case volume archive drawing</title>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 49h38l10 12h50v67H31V49Z"/>
+    <path d="M31 70h98M48 87h39M48 99h62M48 111h51"/>
+    <circle cx="114" cy="51" r="14"/>
+    <path d="M114 44v14M107 51h14"/>
+  </g>
+</svg>

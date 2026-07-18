@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Fish inventory crisis archive drawing</title>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 83c17-27 52-34 79-15l24-18-5 31 7 29-26-18c-27 19-62 13-79-9Z"/>
+    <path d="M46 62c-7-12-2-23 9-30M68 58c-3-17 5-28 18-34M92 65c5-15 16-22 29-21"/>
+    <path d="M56 69v28M68 64v38M80 62v42M92 65v35M104 70v25" stroke-dasharray="2 5"/>
+    <circle cx="42" cy="79" r="3" fill="#111"/>
+    <path d="m134 30 7 13M141 30l-7 13M28 116l-7 14M21 116l7 14M111 118l7 14M118 118l-7 14"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Empty coffee cup archive drawing</title>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 57h72v54a15 15 0 0 1-15 15H53a15 15 0 0 1-15-15V57Z"/>
+    <path d="M110 69h8c15 0 17 27 0 30h-8M27 132h101M51 48c-7-8 6-12 0-21M74 48c-7-8 6-12 0-21M97 48c-7-8 6-12 0-21"/>
+    <path d="M50 108c12 4 35 4 48 0" stroke-dasharray="2 5"/>
+  </g>
+</svg>

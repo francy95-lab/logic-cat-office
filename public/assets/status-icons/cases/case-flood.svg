@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>Flood of case files archive drawing</title>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 86h35l8 9h43v42H20V86ZM41 52h35l8 9h43v25H41V52ZM63 20h35l8 9h34v23H63V20Z"/>
+    <path d="M20 104h86M41 70h86M63 38h77M35 116h43M55 78h44M76 45h37"/>
+    <path d="m121 103 9 9 9-9M130 91v21M111 124l8 8 8-8M119 113v19"/>
+  </g>
+</svg>
