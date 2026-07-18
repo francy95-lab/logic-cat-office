@@ -93,15 +93,15 @@ function App() {
         </div>
 
         <div className="hero-content shell">
-          <div className="hero-kicker">EVERY WEIRD CAT DESERVES A FILE.</div>
+          <div className="hero-kicker">EVERY UGLY CAT DESERVES A FILE.</div>
           <h1>
             <span>逻辑猫</span>
             <span className="outline">事务所</span>
           </h1>
           <div className="hero-footer-row">
             <div>
-              <p>每一只怪猫，都值得拥有一份档案。</p>
-              <small>An unofficial agency documenting strange cats, awkward expressions and beautifully inappropriate poses.</small>
+              <p>每一只丑猫，都值得拥有一份档案。</p>
+              <small>An unofficial agency documenting ugly cats, awkward expressions and beautifully inappropriate poses.</small>
             </div>
             <button className="round-arrow" onClick={() => scrollToSection('about')} aria-label="继续浏览">↓</button>
           </div>
@@ -111,10 +111,10 @@ function App() {
       <section id="about" className="about-section section-light">
         <div className="shell section-grid">
           <div className="section-label"><span>01</span><p>WHAT WE DO</p></div>
-          <div className="section-heading"><p className="eyebrow">事务所说明 / OFFICE MANIFESTO</p><h2>记录奇怪的猫。<br />不是为了纠正它们，<br />只是为了留下证据。</h2></div>
+          <div className="section-heading"><p className="eyebrow">事务所说明 / OFFICE MANIFESTO</p><h2>记录丑丑的猫。<br />不是为了纠正它们，<br />只是为了留下证据。</h2></div>
         </div>
         <div className="shell manifesto-grid">
-          {[['01','奇怪的猫','ABNORMAL CATS'],['02','失控的表情','QUESTIONABLE EXPRESSIONS'],['03','不合时宜的姿势','INAPPROPRIATE POSES']].map(([n,zh,en]) => (
+          {[['01','丑丑的猫','UGLY CATS'],['02','失控的表情','QUESTIONABLE EXPRESSIONS'],['03','不合时宜的姿势','INAPPROPRIATE POSES']].map(([n,zh,en]) => (
             <article key={n}><span>{n}</span><h3>{zh}</h3><p>{en}</p></article>
           ))}
         </div>
@@ -126,7 +126,7 @@ function App() {
           <div className="section-heading"><p className="eyebrow">员工档案室 / RESTRICTED FILES</p><h2>这里不展示作品。<br />这里只保存员工证据。</h2></div>
         </div>
         <div className="shell archive-stage">
-          <div className="archive-image-wrap"><img src="/assets/employee-archive.jpg" alt="黑色怪猫员工档案" /><span className="image-stamp">ORIGINAL RECORD / 03</span></div>
+          <div className="archive-image-wrap"><img src="/assets/employee-archive.jpg" alt="黑色丑猫员工档案" /><span className="image-stamp">ORIGINAL RECORD / 03</span></div>
           <div className="archive-list">
             {archiveCards.map((card, index) => (
               <article className="archive-card" key={card.id}>
@@ -148,7 +148,7 @@ function App() {
           <div className="section-heading"><p className="eyebrow">明星员工展览板 / THIS MONTH</p><h2>表现并不优秀，<br />但镜头感十分稳定。</h2></div>
         </div>
         <div className="shell feature-card">
-          <div className="feature-image"><img src="/assets/star-employees.jpg" alt="两只猫及其怪猫画像" /></div>
+          <div className="feature-image"><img src="/assets/star-employees.jpg" alt="两只猫及其丑猫画像" /></div>
           <div className="feature-copy">
             <div className="feature-meta"><span>EXHIBIT 002</span><span>DUO PORTRAIT</span></div>
             <div><p className="eyebrow">SELECTED PROJECT</p><h3>双人入职照</h3><p className="feature-description">根据宠物实照提取最有记忆点的表情，再由 L 用极少线条留下“像，但绝不正常”的正式档案。</p></div>
