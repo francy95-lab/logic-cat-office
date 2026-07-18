@@ -163,7 +163,7 @@ function App() {
           <div className="section-heading"><p className="eyebrow">今日案件 / CASE NO. 014</p><h2>凌晨 03:17，<br />员工开始攻击空气。</h2></div>
         </div>
         <div className="shell case-board">
-          <div className="case-image"><img src="/assets/hero-cat.jpg" alt="今日案件嫌疑员工" /></div>
+          <div className="case-image"><img src="/assets/空气主管.jpg" alt="今日案件空气主管猫咪线稿" /></div>
           <div className="case-report">
             <div className="report-line"><span>SUBJECT</span><b>UC-014 / 空气主管</b></div>
             <div className="report-line"><span>CHARGE</span><b>对空气持续发起无效攻击</b></div>
