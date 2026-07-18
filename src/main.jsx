@@ -10,9 +10,9 @@ const navItems = [
 ];
 
 const archiveCards = [
-  { id: 'UC-021', name: '黑三角', en: 'BLACK TRIANGLE', dept: '夜间巡逻部', status: '在岗', note: '擅长在凌晨三点制造无法解释的声响。', mood: 'HIGHLY SUSPICIOUS' },
-  { id: 'UC-014', name: '空气主管', en: 'AIR DIRECTOR', dept: '战略发呆部', status: '远程', note: '会议参与度极低，但从不缺席合影。', mood: 'OFFLINE' },
-  { id: 'UC-008', name: '长条同事', en: 'LONG COLLEAGUE', dept: '水平移动部', status: '趴平', note: '以最低能耗完成全天候地面覆盖。', mood: 'ENERGY SAVING' },
+  { id: 'UC-021', name: '黑三角', en: 'BLACK TRIANGLE', dept: '夜间巡逻部', status: '在岗', note: '擅长在凌晨三点制造无法解释的声响。', mood: 'HIGHLY SUSPICIOUS', image: '/assets/employee-archive.jpg' },
+  { id: 'UC-014', name: '空气主管', en: 'AIR DIRECTOR', dept: '战略发呆部', status: '远程', note: '会议参与度极低，但从不缺席合影。', mood: 'OFFLINE', image: '/assets/空气主管.jpg' },
+  { id: 'UC-008', name: '长条同事', en: 'LONG COLLEAGUE', dept: '水平移动部', status: '趴平', note: '以最低能耗完成全天候地面覆盖。', mood: 'ENERGY SAVING', image: '/assets/长条同事.jpg' },
 ];
 
 const randomEmployees = [
@@ -30,6 +30,7 @@ function scrollToSection(id) {
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [archiveIndex, setArchiveIndex] = useState(0);
   const [time, setTime] = useState('');
   const [employeeIndex, setEmployeeIndex] = useState(0);
   const [officeMood, setOfficeMood] = useState('STABLE');
@@ -51,6 +52,10 @@ function App() {
 
   const shuffleEmployee = () => {
     setEmployeeIndex((current) => (current + 1 + Math.floor(Math.random() * (randomEmployees.length - 1))) % randomEmployees.length);
+  };
+
+  const changeArchive = (direction) => {
+    setArchiveIndex((current) => (current + direction + archiveCards.length) % archiveCards.length);
   };
 
   return (
@@ -126,13 +131,28 @@ function App() {
           <div className="section-heading"><p className="eyebrow">员工档案室 / RESTRICTED FILES</p><h2>这里不展示作品。<br />这里只保存员工证据。</h2></div>
         </div>
         <div className="shell archive-stage">
-          <div className="archive-image-wrap"><img src="/assets/employee-archive.jpg" alt="黑色丑猫员工档案" /><span className="image-stamp">ORIGINAL RECORD / 03</span></div>
+          <div className="archive-image-wrap">
+            <div className="archive-image-stack">
+              {archiveCards.map((card, index) => (
+                <img
+                  className={`archive-image${index === archiveIndex ? ' is-active' : ''}`}
+                  src={card.image}
+                  alt={index === archiveIndex ? `${card.name} / ${card.en} 员工档案` : ''}
+                  aria-hidden={index !== archiveIndex}
+                  key={card.id}
+                />
+              ))}
+              <button className="archive-switch archive-switch-prev" type="button" onClick={() => changeArchive(-1)} aria-label="查看上一位员工档案"><span aria-hidden="true">←</span></button>
+              <button className="archive-switch archive-switch-next" type="button" onClick={() => changeArchive(1)} aria-label="查看下一位员工档案"><span aria-hidden="true">→</span></button>
+            </div>
+            <span className="image-stamp">ORIGINAL RECORD / 03</span>
+          </div>
           <div className="archive-list">
             {archiveCards.map((card, index) => (
-              <article className="archive-card" key={card.id}>
+              <article className={`archive-card${index === archiveIndex ? ' is-active' : ''}`} aria-current={index === archiveIndex ? 'true' : undefined} key={card.id}>
                 <div className="archive-card-index">0{index + 1}</div>
                 <div>
-                  <div className="archive-card-head"><div><h3>{card.name}</h3><small>{card.en}</small></div><span>{card.status}</span></div>
+                  <div className="archive-card-head"><div className="archive-card-title"><h3>{card.name}</h3><small>{card.en}</small></div><span>{card.status}</span></div>
                   <dl><div><dt>编号</dt><dd>{card.id}</dd></div><div><dt>部门</dt><dd>{card.dept}</dd></div><div><dt>状态</dt><dd>{card.mood}</dd></div><div><dt>评级</dt><dd>★★★★☆</dd></div></dl>
                   <p>{card.note}</p>
                 </div>
