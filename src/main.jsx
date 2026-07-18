@@ -114,8 +114,8 @@ function App() {
           <div className="section-heading"><p className="eyebrow">事务所说明 / OFFICE MANIFESTO</p><h2>记录丑丑的猫。<br />不是为了纠正它们，<br />只是为了留下证据。</h2></div>
         </div>
         <div className="shell manifesto-grid">
-          {[['01','丑丑的猫','UGLY CATS'],['02','失控的表情','QUESTIONABLE EXPRESSIONS'],['03','不合时宜的姿势','INAPPROPRIATE POSES']].map(([n,zh,en]) => (
-            <article key={n}><span>{n}</span><h3>{zh}</h3><p>{en}</p></article>
+          {[['01','丑丑的猫','UGLY CATS','/assets/丑丑的猫.jpg'],['02','失控的表情','QUESTIONABLE EXPRESSIONS','/assets/失控的表情.jpg'],['03','不合时宜的姿势','INAPPROPRIATE POSES','/assets/不合时宜的姿势.jpg']].map(([n,zh,en,image]) => (
+            <article key={n}><span>{n}</span><div className="manifesto-image"><img src={image} alt={zh} /></div><h3>{zh}</h3><p>{en}</p></article>
           ))}
         </div>
       </section>
