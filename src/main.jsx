@@ -12,7 +12,7 @@ const navItems = [
 
 const archiveCards = [
   { id: 'UC-021', name: '黑三角', en: 'BLACK TRIANGLE', dept: '夜间巡逻部', status: '在岗', note: '擅长在凌晨三点制造无法解释的声响。', mood: 'HIGHLY SUSPICIOUS', image: '/assets/employee-archive.jpg' },
-  { id: 'UC-014', name: '空气主管', en: 'AIR DIRECTOR', dept: '战略发呆部', status: '远程', note: '会议参与度极低，但从不缺席合影。', mood: 'OFFLINE', image: '/assets/空气主管.jpg' },
+  { id: 'UC-014', name: '贴贴', en: 'TIETIE', dept: '异常观察部', status: '近距离观察员', note: '擅长近距离确认所有事情，但经常忘记保持距离。', mood: 'OVER OBSERVING', image: '/assets/贴贴.jpg' },
   { id: 'UC-008', name: '垂手同事', en: 'LONG-ARM COLLEAGUE', dept: '垂直待机部', status: '垂手', note: '长期保持原地待机，双手总比本人更早抵达地面。', mood: 'STANDING BY', image: '/assets/长条同事.jpg' },
 ];
 
@@ -218,15 +218,15 @@ function App() {
       <section id="case" className="case-section section-light">
         <div className="shell section-grid">
           <div className="section-label"><span>04</span><p>TODAY'S CASE</p></div>
-          <div className="section-heading"><p className="eyebrow">今日案件 / CASE NO. 014</p><h2>凌晨 03:17，<br />员工开始攻击空气。</h2></div>
+          <div className="section-heading"><p className="eyebrow">今日案件 / CASE NO. 014</p><h2>员工距离管理失败。<br />EMPLOYEE LOST DISTANCE CONTROL.</h2></div>
         </div>
         <div className="shell case-board">
-          <div className="case-image"><img src="/assets/空气主管.jpg" alt="今日案件空气主管猫咪线稿" /></div>
+          <div className="case-image"><img src="/assets/贴贴.jpg" alt="今日案件贴贴猫咪档案" /></div>
           <div className="case-report">
-            <div className="report-line"><span>SUBJECT</span><b>UC-014 / 空气主管</b></div>
-            <div className="report-line"><span>CHARGE</span><b>对空气持续发起无效攻击</b></div>
-            <div className="report-line"><span>EVIDENCE</span><b>地板震动、尾巴膨胀、无受害者</b></div>
-            <div className="report-line"><span>RESULT</span><b>空气已认输</b></div>
+            <div className="report-line"><span>SUBJECT</span><b>UC-014 / 贴贴</b></div>
+            <div className="report-line"><span>CHARGE</span><b>持续进入过近观察状态</b></div>
+            <div className="report-line"><span>EVIDENCE</span><b>距离目标不足5厘米</b></div>
+            <div className="report-line"><span>RESULT</span><b>目标已确认，但工作暂停</b></div>
             <div className="case-status">STATUS / STILL UNDER INVESTIGATION</div>
           </div>
         </div>
