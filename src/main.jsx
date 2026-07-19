@@ -1,14 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import OfficeStatus from './components/OfficeStatus';
+import SiteHeader from './components/SiteHeader';
+import ArchivePage from './pages/ArchivePage';
+import EmployeeArchiveFilePage from './pages/EmployeeArchiveFilePage';
+import EmployeeDetailPage from './pages/EmployeeDetailPage';
 import './styles.css';
-
-const navItems = [
-  { label: '档案', en: 'ARCHIVE', target: 'archive' },
-  { label: '展览', en: 'EXHIBITION', target: 'featured' },
-  { label: '案件', en: 'CASES', target: 'case' },
-  { label: '保管员', en: 'KEEPER', target: 'archivist' },
-];
 
 const archiveCards = [
   { id: 'UC-021', name: '黑三角', en: 'BLACK TRIANGLE', dept: '夜间巡逻部', status: '在岗', note: '擅长在凌晨三点制造无法解释的声响。', mood: 'HIGHLY SUSPICIOUS', image: '/assets/employee-archive.jpg' },
@@ -66,7 +63,6 @@ function scrollToSection(id) {
 }
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [archiveIndex, setArchiveIndex] = useState(0);
   const [isMobileHero, setIsMobileHero] = useState(() => window.matchMedia('(max-width: 768px)').matches);
   const [time, setTime] = useState('');
@@ -106,29 +102,7 @@ function App() {
 
   return (
     <main>
-      <header className="site-header">
-        <button className="brand" onClick={() => scrollToSection('home')} aria-label="返回首页">
-          <span className="brand-mark">LC</span>
-          <span className="brand-copy"><b>逻辑猫事务所</b><small>LOGIC CAT OFFICE</small></span>
-        </button>
-
-        <nav className={menuOpen ? 'nav open' : 'nav'} aria-label="主导航">
-          {navItems.map((item) => (
-            <button key={item.target} onClick={() => { scrollToSection(item.target); setMenuOpen(false); }}>
-              <span>{item.en}</span><small>{item.label}</small>
-            </button>
-          ))}
-        </nav>
-
-        <div className="header-actions">
-          <button className="language-switch" title="多语言功能预留">中 / EN / 日</button>
-          <a className="contact-chip" href="https://www.xiaohongshu.com" target="_blank" rel="noreferrer">联系 L ↗</a>
-        </div>
-
-        <button className="menu-toggle" onClick={() => setMenuOpen((v) => !v)} aria-label="切换菜单">
-          <span></span><span></span>
-        </button>
-      </header>
+      <SiteHeader />
 
       <section id="home" className="hero section-dark">
         {isMobileHero ? (
@@ -280,4 +254,15 @@ function App() {
   );
 }
 
-createRoot(document.getElementById('root')).render(<App />);
+const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
+const employeeFileMatch = currentPath.match(/^\/archive\/([^/]+)\/file$/);
+const employeeDetailMatch = currentPath.match(/^\/archive\/([^/]+)$/);
+const currentPage = currentPath === '/archive'
+  ? <ArchivePage />
+  : employeeFileMatch
+    ? <EmployeeArchiveFilePage slug={employeeFileMatch[1]} />
+  : employeeDetailMatch
+    ? <EmployeeDetailPage slug={employeeDetailMatch[1]} />
+    : <App />;
+
+createRoot(document.getElementById('root')).render(currentPage);

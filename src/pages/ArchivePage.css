@@ -1,0 +1,23 @@
+.archive-overview-page{min-height:100vh;background:var(--offwhite);color:var(--black)}
+.archive-overview{padding:108px 0 44px}
+.archive-overview-header{display:grid;grid-template-columns:1.55fr .45fr;gap:60px;align-items:end;padding:16px 0 22px;border-top:1px solid var(--line-light);border-bottom:1px solid var(--line-light)}
+.archive-overview-heading>p{margin:0 0 12px;font:400 10px 'DM Mono';letter-spacing:.16em;opacity:.55}
+.archive-overview-heading h1{margin:0;font-size:clamp(46px,5vw,72px);font-weight:600;line-height:.9;letter-spacing:-.06em}
+.archive-overview-summary{justify-self:end;min-width:280px;padding-top:8px;font-size:13px;line-height:1.7}
+.archive-overview-summary p{margin:0}
+.archive-overview-summary p:first-child{font:400 10px 'DM Mono';letter-spacing:.1em;margin-bottom:9px}
+.archive-overview-summary p:last-child{opacity:.58}
+.archive-catalog{width:100%;max-width:1080px;margin-inline:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-bottom:1px solid var(--line-light)}
+.archive-catalog-card{display:block;min-width:0;padding:16px;color:inherit;text-decoration:none;border-right:1px solid var(--line-light);border-top:1px solid transparent;transition:transform .35s cubic-bezier(.2,.7,.1,1),border-color .3s ease}
+.archive-catalog-card:focus-visible{outline:1px solid var(--black);outline-offset:-1px}
+.archive-catalog-card:first-child{border-left:1px solid var(--line-light)}
+.archive-catalog-image{height:clamp(310px,25vw,360px);display:grid;place-items:center;overflow:hidden;background:#fff}
+.archive-catalog-image img{height:100%;object-fit:contain;filter:grayscale(1) contrast(1.08);transform:scale(1);transition:transform .65s cubic-bezier(.2,.7,.1,1)}
+.archive-catalog-info{position:relative;padding:18px 0 4px}
+.archive-catalog-info>span{position:absolute;top:25px;right:0;font:400 9px 'DM Mono';letter-spacing:.12em;opacity:.48}
+.archive-catalog-info h2{margin:0 110px 8px 0;font-size:36px;line-height:1.05;letter-spacing:-.045em;font-weight:500}
+.archive-catalog-info p{margin:0;font:400 9px 'DM Mono';letter-spacing:.13em;opacity:.48}
+@media(hover:hover){.archive-catalog-card:hover{transform:translateY(-4px);border-color:rgba(8,8,8,.42)}.archive-catalog-card:hover .archive-catalog-image img{transform:scale(1.012)}}
+@media(max-width:1100px){.archive-overview{padding-top:112px}.archive-overview-header{grid-template-columns:1fr .5fr}.archive-catalog{grid-template-columns:repeat(2,minmax(0,1fr))}.archive-catalog-card:nth-child(2n+1){border-left:1px solid var(--line-light)}.archive-catalog-card:nth-child(n+3){border-top-color:var(--line-light)}.archive-catalog-image{height:min(44vw,400px)}}
+@media(max-width:700px){.archive-overview{padding:100px 0 64px}.archive-overview-header{grid-template-columns:1fr;gap:30px;padding-bottom:28px}.archive-overview-heading h1{font-size:clamp(48px,16vw,64px)}.archive-overview-summary{justify-self:start;min-width:0;padding-top:0}.archive-catalog{grid-template-columns:1fr}.archive-catalog-card{padding:16px 0;border-right:0;border-left:0!important}.archive-catalog-card:nth-child(n+2){border-top-color:var(--line-light)}.archive-catalog-image{height:min(105vw,500px)}.archive-catalog-info{padding-top:20px}.archive-catalog-info>span{top:25px}.archive-catalog-info h2{font-size:34px}}
+@media(prefers-reduced-motion:reduce){.archive-catalog-card,.archive-catalog-image img{transition:none}}
