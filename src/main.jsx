@@ -13,7 +13,7 @@ const navItems = [
 const archiveCards = [
   { id: 'UC-021', name: '黑三角', en: 'BLACK TRIANGLE', dept: '夜间巡逻部', status: '在岗', note: '擅长在凌晨三点制造无法解释的声响。', mood: 'HIGHLY SUSPICIOUS', image: '/assets/employee-archive.jpg' },
   { id: 'UC-014', name: '空气主管', en: 'AIR DIRECTOR', dept: '战略发呆部', status: '远程', note: '会议参与度极低，但从不缺席合影。', mood: 'OFFLINE', image: '/assets/空气主管.jpg' },
-  { id: 'UC-008', name: '长条同事', en: 'LONG COLLEAGUE', dept: '水平移动部', status: '趴平', note: '以最低能耗完成全天候地面覆盖。', mood: 'ENERGY SAVING', image: '/assets/长条同事.jpg' },
+  { id: 'UC-008', name: '垂手同事', en: 'LONG-ARM COLLEAGUE', dept: '垂直待机部', status: '垂手', note: '长期保持原地待机，双手总比本人更早抵达地面。', mood: 'STANDING BY', image: '/assets/长条同事.jpg' },
 ];
 
 const randomEmployees = [
