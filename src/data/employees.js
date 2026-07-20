@@ -51,6 +51,23 @@ const archiveEmployees = [
     ],
   },
   {
+    id: 'UC-0004',
+    slug: 'uc-0004',
+    nameZh: '空空',
+    nameEn: 'KONGKONG',
+    coverImage: '/assets/空空.jpg',
+    department: '战略发呆部',
+    position: '空气主管',
+    status: 'OFFLINE',
+    rating: 'NIGHT SHIFT SPECIALIST',
+    archiveFiles: [
+      '/assets/archive/uc-0004/空空01.png',
+      '/assets/archive/uc-0004/空空02.png',
+      '/assets/archive/uc-0004/空空03.png',
+      '/assets/archive/uc-0004/空空04.png',
+    ],
+  },
+  {
     id: 'UC-0014',
     slug: 'uc-0014',
     nameZh: '贴贴',
