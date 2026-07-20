@@ -17,6 +17,23 @@ const archiveEmployees = [
     ],
   },
   {
+    id: 'UC-0001',
+    slug: 'uc-0001',
+    nameZh: '尾巴',
+    nameEn: 'WEIBA',
+    coverImage: '/assets/尾巴.jpg',
+    department: '董事会',
+    position: '董事长',
+    status: 'ACTIVE',
+    rating: 'FOUNDER CHAIRMAN',
+    archiveFiles: [
+      '/assets/archive/uc-0001/尾巴01.png',
+      '/assets/archive/uc-0001/尾巴02.png',
+      '/assets/archive/uc-0001/尾巴03.png',
+      '/assets/archive/uc-0001/尾巴04.png',
+    ],
+  },
+  {
     id: 'UC-0014',
     slug: 'uc-0014',
     nameZh: '贴贴',
