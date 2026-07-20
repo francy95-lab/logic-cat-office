@@ -68,6 +68,23 @@ const archiveEmployees = [
     ],
   },
   {
+    id: 'UC-0006',
+    slug: 'uc-0006',
+    nameZh: '阿福',
+    nameEn: 'AFU',
+    coverImage: '/assets/阿福.jpg',
+    department: '异常行为研究部',
+    position: '首席生活观察员',
+    status: 'ACTIVE',
+    rating: 'FOUNDER EMPLOYEE',
+    archiveFiles: [
+      '/assets/archive/uc-0006/阿福01.png',
+      '/assets/archive/uc-0006/阿福02.png',
+      '/assets/archive/uc-0006/阿福03.png',
+      '/assets/archive/uc-0006/阿福04.png',
+    ],
+  },
+  {
     id: 'UC-0014',
     slug: 'uc-0014',
     nameZh: '贴贴',
