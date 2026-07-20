@@ -34,6 +34,23 @@ const archiveEmployees = [
     ],
   },
   {
+    id: 'UC-0002',
+    slug: 'uc-0002',
+    nameZh: '显荣',
+    nameEn: 'XIANRONG',
+    coverImage: '/assets/显荣.jpg',
+    department: '董事会',
+    position: '副董事长兼首席休眠顾问',
+    status: 'ACTIVE',
+    rating: 'CO-FOUNDER',
+    archiveFiles: [
+      '/assets/archive/uc-0002/显荣01.png',
+      '/assets/archive/uc-0002/显荣02.png',
+      '/assets/archive/uc-0002/显荣03.png',
+      '/assets/archive/uc-0002/显荣04.png',
+    ],
+  },
+  {
     id: 'UC-0014',
     slug: 'uc-0014',
     nameZh: '贴贴',
