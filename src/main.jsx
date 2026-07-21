@@ -241,7 +241,7 @@ function App() {
         <div className="archivist-photo"><img src="/assets/archivist-l.jpg" alt="档案保管员 L 展示手绘速写本" /></div>
         <div className="archivist-panel">
           <div className="archivist-number">07 / CHIEF ARCHIVIST</div>
-          <div className="archivist-main"><p className="eyebrow">档案保管员 · L</p><h2>真正赋予员工身份的人。</h2><p className="archivist-intro">AI 只负责入职流程与趣味评估。每一份最终档案，仍由 L 亲手观察、亲手绘制并亲自签发。</p><p className="archivist-intro">有人想让自己的猫、狗或其他宠物入职事务所，可以提交真实照片，由 L 为它录入一份独一无二的正式档案。</p></div>
+          <div className="archivist-main"><p className="eyebrow">档案保管员 · L</p><h2>真正赋予员工身份的人。</h2><p className="archivist-intro">每一份档案都经过档案保管员 L 的观察与确认，并被永久收录于事务所数据库。</p><p className="archivist-intro">若你的猫、狗或其他伙伴希望加入事务所，请提交真实照片。L 将为它建立专属档案，赋予编号，并记录它不可复制的员工特征。</p></div>
           <div className="contact-block"><span>OPEN RECRUITMENT / 档案申请入口</span><a href="https://www.xiaohongshu.com" target="_blank" rel="noreferrer">小红书号：LinnnnnLiu <b>↗</b></a></div>
           <footer><span>© {year} LOGIC CAT OFFICE</span><span>ALL EMPLOYEES ARE QUESTIONABLE.</span></footer>
         </div>
