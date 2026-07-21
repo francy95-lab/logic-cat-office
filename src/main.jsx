@@ -8,9 +8,9 @@ import EmployeeDetailPage from './pages/EmployeeDetailPage';
 import './styles.css';
 
 const archiveCards = [
-  { id: 'UC-021', name: '黑三角', en: 'BLACK TRIANGLE', dept: '夜间巡逻部', status: '在岗', note: '擅长在凌晨三点制造无法解释的声响。', mood: 'HIGHLY SUSPICIOUS', image: '/assets/employee-archive.jpg' },
+  { id: 'UC-0021', name: '黑三角', en: 'BLACK TRIANGLE', dept: '夜间巡逻部', status: '在岗', note: '擅长在凌晨三点制造无法解释的声响。', mood: 'HIGHLY SUSPICIOUS', image: '/assets/employee-archive.jpg' },
   { id: 'UC-0014', name: '贴贴', en: 'TIETIE', dept: '异常观察部', status: '近距离观察员', note: '擅长近距离确认所有事情，但经常忘记保持距离。', mood: 'OVER OBSERVING', image: '/assets/贴贴.jpg' },
-  { id: 'UC-008', name: '垂手同事', en: 'LONG-ARM COLLEAGUE', dept: '垂直待机部', status: '垂手', note: '长期保持原地待机，双手总比本人更早抵达地面。', mood: 'STANDING BY', image: '/assets/长条同事.jpg' },
+  { id: 'UC-0008', name: '垂手同事', en: 'LONG-ARM COLLEAGUE', dept: '垂直待机部', status: '垂手', note: '长期保持原地待机，双手总比本人更早抵达地面。', mood: 'STANDING BY', image: '/assets/长条同事.jpg' },
 ];
 
 const caseFile = {
@@ -29,7 +29,7 @@ const randomEmployees = [
   { id: 'UC-042', name: '塑料袋审计员', dept: '异常口感部', mood: '稳定但可疑', salary: '2 根猫条 / 日', skill: '持续检查所有塑料包装' },
   { id: 'UC-117', name: '窗边观察员', dept: '邻里监控部', mood: '高度警觉', salary: '1 个纸箱 / 周', skill: '对窗外每一片树叶建立档案' },
   { id: 'UC-303', name: '会议缺席代表', dept: '战略消失部', mood: '正在加载', salary: '按出席次数结算', skill: '准时错过所有重要会议' },
-  { id: 'UC-008', name: '长条同事', dept: '水平移动部', mood: '彻底趴平', salary: '一块温暖地板', skill: '把任何空间变成休息区' },
+  { id: 'UC-0008', name: '长条同事', dept: '水平移动部', mood: '彻底趴平', salary: '一块温暖地板', skill: '把任何空间变成休息区' },
   { id: 'UC-056', name: '纸箱结构顾问', dept: '空间利用部', mood: '准备入住', salary: '1 个加厚纸箱 / 月', skill: '评估所有纸箱的居住价值' },
   { id: 'UC-073', name: '清晨叫醒专员', dept: '非必要提醒部', mood: '过度积极', salary: '3 块冻干 / 次', skill: '在 05:12 准时启动全屋提醒' },
   { id: 'UC-091', name: '键盘占用工程师', dept: '输入干扰部', mood: '正在踩键', salary: '每小时 1 次摸头', skill: '在最关键时刻覆盖全部快捷键' },
@@ -234,7 +234,7 @@ function App() {
 
       <section id="enter" className="enter-section section-dark">
         <div className="enter-grain"></div>
-        <div className="shell enter-content"><p>THE ARCHIVE IS OPEN</p><h2>ENTER<br/><span>THE ARCHIVES</span></h2><button onClick={() => scrollToSection('archive')}>进入员工档案室 ↗</button></div>
+        <div className="shell enter-content"><p>THE ARCHIVE IS OPEN</p><h2>ENTER<br/><span>THE ARCHIVES</span></h2><button onClick={() => window.location.assign('/archive')}>进入员工档案室 ↗</button></div>
       </section>
 
       <section id="archivist" className="archivist-section section-light">
