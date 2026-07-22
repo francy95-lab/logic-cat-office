@@ -1,0 +1,16 @@
+{
+  "templateVersion": "AFU_V1.0", "employeeNo": "UC-0006", "nameZh": "阿福", "nameEn": "Afu",
+  "species": "Domestic Cat", "department": "异常行为研究部", "position": "首席生活观察员", "joinDate": "2026.07.19",
+  "statusZh": "在职", "statusEn": "ACTIVE", "level": "Founder Employee", "portrait": "portrait.png",
+  "skills": [
+    { "key": "observation", "labelZh": "人类观察能力", "score": 5 },
+    { "key": "recovery", "labelZh": "睡眠恢复能力", "score": 5 },
+    { "key": "movement", "labelZh": "快速移动能力", "score": 3 },
+    { "key": "initiative", "labelZh": "工作积极性", "score": 1 },
+    { "key": "selectiveHearing", "labelZh": "装作没听见能力", "score": 5 }
+  ],
+  "tags": ["观察者", "低能耗生活专家", "沉默派", "资深摸鱼员工", "神秘主义者"],
+  "performanceReview": { "body": ["阿福没有完成任何明确任务。", "但经过调查发现：", "整个办公室的运行，", "似乎都在它的观察范围内。"], "grade": "A", "gradeLabel": "优秀", "reason": ["不知道为什么，", "但感觉它知道些什么。"] },
+  "archivistNote": ["第一次记录阿福的时候，", "我以为它只是一只表情很臭的猫。", "", "后来我发现：", "有些猫不需要做什么。", "它们存在本身，", "就是一种记录。"],
+  "archivistSignature": "L", "sealYear": "2026"
+}

@@ -1,0 +1,15 @@
+{
+  "templateVersion": "AFU_V1.0", "employeeNo": "UC-0021", "nameZh": "黑三角", "nameEn": "Black Triangle",
+  "species": "Domestic Cat", "department": "异常行为研究部", "position": "特殊观察员", "joinDate": "2026.07.21",
+  "statusZh": "在职", "statusEn": "ACTIVE", "level": "Special Employee", "portrait": "portrait.png",
+  "skills": [
+    { "key": "observation", "labelZh": "人类观察能力", "score": 5 },
+    { "key": "presence", "labelZh": "办公室存在感", "score": 3 },
+    { "key": "support", "labelZh": "情绪支持能力", "score": 3 },
+    { "key": "selfEntertainment", "labelZh": "自我娱乐能力", "score": 5 }
+  ],
+  "tags": ["观察者", "低能耗生活专家", "沉默派", "资深摸鱼员工", "神秘主义者"],
+  "performanceReview": { "body": ["黑三角没有明确任务。", "但经过长期观察发现：", "它似乎一直在关注事务所的一切。", "目前列为重点研究对象。"], "grade": "A", "gradeLabel": "优秀", "reason": ["行为模式稳定", "观察能力突出"] },
+  "archivistNote": ["第一次记录黑三角的时候，", "我以为它只是一只普通的猫。", "", "后来我发现：", "它似乎一直在观察事务所。", "", "目前仍列为重点研究对象。"],
+  "archivistSignature": "L", "sealYear": "2026"
+}

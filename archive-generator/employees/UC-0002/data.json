@@ -1,0 +1,15 @@
+{
+  "templateVersion": "AFU_V1.0", "employeeNo": "UC-0002", "nameZh": "显荣", "nameEn": "Xianrong",
+  "species": "Domestic Cat", "department": "董事会", "position": "副董事长兼首席休眠顾问", "joinDate": "—",
+  "statusZh": "在职", "statusEn": "ACTIVE", "level": "S", "portrait": "portrait.png",
+  "skills": [
+    { "key": "humanObservation", "labelZh": "人类观察能力", "score": 5 },
+    { "key": "officePresence", "labelZh": "办公室存在感", "score": 5 },
+    { "key": "emotionalSupport", "labelZh": "情绪支持能力", "score": 4 },
+    { "key": "selfEntertainment", "labelZh": "自我娱乐能力", "score": 5 }
+  ],
+  "tags": ["观察者", "秩序维护者", "低调领导者"],
+  "performanceReview": { "body": ["擅长维持事务所日常秩序，是逻辑猫事务所的重要精神核心。"], "grade": "A", "gradeLabel": "", "reason": [] },
+  "archivistNote": ["第一位正式录入逻辑猫事务所档案系统的员工。"],
+  "archivistSignature": "L", "sealYear": "2026"
+}

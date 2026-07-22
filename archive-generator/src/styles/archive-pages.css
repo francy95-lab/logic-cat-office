@@ -1,0 +1,77 @@
+.page01-portrait { position: absolute; left: 52px; top: 285px; width: 610px; height: 675px; }
+.page01-portrait img { width: 100%; height: 100%; object-fit: contain; object-position: left center; mix-blend-mode: multiply; filter: contrast(1.08); }
+.page01-portrait .paper-clip { position: absolute; z-index: 2; left: 13px; top: -46px; width: 54px; height: 165px; }
+.page01-info { position: absolute; top: 306px; right: 56px; width: 290px; }
+.page01-info dl { margin: 70px 0 0; }
+.page01-info dl div { padding: 0 0 17px; margin-bottom: 18px; border-bottom: 1px solid rgba(0,0,0,.22); }
+.page01-info dt { font: 600 22px/1.1 var(--font-archive-mono); }
+.page01-info dt small { margin-left: 8px; font: 400 16px var(--font-chinese-system); color: #4c4a47; }
+.page01-info dd { margin: 14px 0 0; font: 400 21px/1.25 var(--font-archive-mono); color: #57534e; }
+.page01-info dl div:nth-child(4) dd, .page01-info dl div:nth-child(5) dd, .page01-info dl div:nth-child(7) dd { font-family: var(--font-chinese-system); }
+.page01-identity { position: absolute; left: 56px; top: 1128px; width: 586px; }
+.page01-identity p { margin: 0 0 12px; font: 400 26px var(--font-archive-mono); }
+.page01-identity strong { display: inline-block; padding: 12px 22px 10px; color: white; background: #050505; font: 500 27px var(--font-archive-mono); letter-spacing: .04em; }
+.page01-identity h2 { margin: 38px 0 0; font: 500 61px/1 var(--font-chinese-system); letter-spacing: .02em; }
+.page01-identity h2 span { font: 400 43px var(--font-archive-mono); }
+.active-stamp { position: absolute; left: 544px; top: 1196px; padding: 7px 12px 5px; color: var(--stamp-red); border: 2px solid var(--stamp-red); border-radius: 2px; font: 500 25px var(--font-archive-mono); letter-spacing: .08em; transform: rotate(-7deg); }
+.page01-identity .cat-paw { position: absolute; right: 0; top: 152px; width: 72px; height: 72px; fill: #050505; }
+.page-02 .portrait-card, .page-03 .portrait-card, .page-04 .portrait-card { right: 66px; top: 196px; }
+.page02-title { position: absolute; left: 78px; top: 412px; }
+.skill-list { position: absolute; left: 112px; right: 76px; top: 645px; border-top: 1px solid rgba(0,0,0,.14); }
+.skill-row { height: 140px; display: grid; grid-template-columns: 100px 1fr 395px; align-items: center; gap: 36px; border-bottom: 1px solid rgba(0,0,0,.14); }
+.skill-icon-frame { width: 85px; height: 85px; display: grid; place-items: center; border: 1px solid rgba(0,0,0,.55); border-radius: 5px; }
+.skill-icon { width: 60px; height: 60px; }
+.skill-name { font: 400 31px/1 var(--font-chinese-system); }
+.skill-rating { display: grid; grid-template-columns: repeat(5, 58px); gap: 13px; }
+.skill-rating svg { width: 58px; height: 58px; }
+.skill-rating polygon { fill: transparent; stroke: #050505; stroke-width: .8; }
+.skill-rating polygon.is-filled { fill: #050505; }
+.page-03 .portrait-card { top: 170px; }
+.personality-block { position: absolute; left: 58px; right: 56px; top: 405px; padding-bottom: 49px; border-bottom: 1px solid rgba(0,0,0,.65); }
+.tag-list { margin-top: 29px; display: flex; flex-wrap: wrap; gap: 18px 34px; max-width: 750px; }
+.tag-label { position: relative; display: inline-block; padding: 10px 25px 11px; color: #fff; background: #080808; font: 400 25px/1 var(--font-chinese-system); box-shadow: 0 2px 5px rgba(0,0,0,.18); transform: rotate(-.4deg); }
+.tag-label:nth-child(even) { transform: rotate(.45deg); }
+.tag-label::before, .tag-label::after { content: ''; position: absolute; inset: 0 auto 0 -4px; width: 6px; background: repeating-linear-gradient(0deg,#080808 0 5px,transparent 5px 7px); }
+.tag-label::after { left: auto; right: -4px; }
+.performance-block { position: absolute; left: 78px; right: 72px; top: 765px; }
+.review-paper { position: relative; height: 490px; margin-top: 34px; padding: 48px 92px; background: rgba(250,248,243,.7); border: 1px solid rgba(0,0,0,.15); border-radius: 5px; box-shadow: var(--card-shadow); }
+.review-copy { height: 100%; overflow: hidden; font: 400 26px/1.35 var(--font-chinese-system); }
+.review-copy > p { margin: 0 0 calc(14px * var(--fit-scale, 1)); }
+.review-copy .review-grade { margin-top: calc(38px * var(--fit-scale, 1)); font-weight: 700; }
+.review-reason { margin-top: calc(31px * var(--fit-scale, 1)); }
+.review-reason strong { float: left; margin-right: 12px; }
+.review-reason p { margin: 0 0 10px; }
+.grade-stamp { position: absolute; right: 34px; top: 77px; width: 210px; height: 210px; padding: 12px; border: 5px double rgba(16,16,16,.76); border-radius: 24px; transform: rotate(-10deg); opacity: .78; }
+.grade-stamp::before { content: ''; position: absolute; inset: 9px; border: 2px dashed currentColor; border-radius: 16px; }
+.grade-stamp span { position: relative; display: grid; place-items: center; width: 100%; height: 100%; font: 600 150px/1 var(--font-archive-mono); }
+.page-04 { border: 1px solid rgba(0,0,0,.2); }
+.page-04 .portrait-card { top: 175px; }
+.page04-title { position: absolute; left: 68px; top: 405px; }
+.note-paper { position: absolute; left: 80px; top: 540px; width: 824px; height: 802px; padding: 78px 95px 60px 114px; background: rgba(251,249,244,.72); background-image: repeating-linear-gradient(0deg, transparent 0 38px, rgba(70,65,58,.09) 38px 39px); box-shadow: var(--card-shadow); transform: rotate(.15deg); }
+.binder-holes { position: absolute; left: -12px; top: 30px; bottom: 30px; display: flex; flex-direction: column; justify-content: space-around; }
+.binder-holes i { width: 30px; height: 30px; display: block; border-radius: 50%; background: var(--paper); box-shadow: inset -3px 1px 5px rgba(0,0,0,.2); }
+.note-copy { height: 540px; overflow: hidden; font: 400 31px/1.55 var(--font-archivist-hand); letter-spacing: .11em; }
+.note-copy p { margin: 0 0 calc(21px * var(--fit-scale, 1)); }
+.note-gap { display: block; height: calc(28px * var(--fit-scale, 1)); }
+.archivist-signature { position: absolute; right: 200px; bottom: 88px; width: 132px; height: 76px; margin: 0; display: flex; align-items: flex-end; justify-content: flex-end; gap: 14px; transform: rotate(-1deg); }
+.archivist-signature__line { width: 46px; height: 2px; margin-bottom: 15px; background: #111; }
+.archivist-signature img { display: block; width: 37px; height: 66px; object-fit: contain; }
+.archive-seal { position: absolute; z-index: 4; right: 22px; top: 1010px; width: 330px; height: 330px; transform: rotate(6deg); color: #070707; filter: drop-shadow(0 2px 1px rgba(0,0,0,.08)); }
+.seal-ring { font: 400 25px var(--font-archive-mono); letter-spacing: .16em; }
+.seal-number { font: 600 34px var(--font-archive-mono); }
+.seal-year { font: 600 25px var(--font-archive-mono); }
+@media (max-width: 760px) {
+  .generator-toolbar { position: relative; align-items: flex-start; flex-direction: column; }
+  .generator-toolbar nav { justify-content: flex-start; }
+  .preview-workspace { padding-inline: 20px; }
+  .compare-row { grid-template-columns: 1fr; }
+}
+@media print {
+  @page { size: 1055px 1491px; margin: 0; }
+  body { background: white; }
+  .generator-toolbar { display: none; }
+  .preview-workspace { display: block; padding: 0; }
+  .page-scale-shell { width: var(--page-width); height: var(--page-height); break-after: page; }
+  .page-scale-stage { transform: none; }
+  .archive-page { box-shadow: none; }
+}

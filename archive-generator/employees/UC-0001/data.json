@@ -1,0 +1,87 @@
+{
+  "templateVersion": "AFU_V1.0",
+  "employeeNo": "UC-0001",
+  "nameZh": "尾巴",
+  "nameEn": "Taila",
+  "species": "Domestic Cat",
+  "department": "董事会",
+  "position": "董事长",
+  "joinDate": "2026.07.19",
+  "statusZh": "在职",
+  "statusEn": "ACTIVE",
+  "level": "S",
+  "portrait": "portrait.png",
+
+  "skills": [
+    {
+      "key": "humanObservation",
+      "labelZh": "人类观察能力",
+      "score": 5
+    },
+    {
+      "key": "officePresence",
+      "labelZh": "办公室存在感",
+      "score": 5
+    },
+    {
+      "key": "emotionalSupport",
+      "labelZh": "情绪支持能力",
+      "score": 4
+    },
+    {
+      "key": "selfEntertainment",
+      "labelZh": "自我娱乐能力",
+      "score": 5
+    }
+  ],
+
+  "tags": [
+    "观察者",
+    "秩序维护者",
+    "低调领导者",
+    "晨间跑酷王",
+    "电视陪看派"
+  ],
+
+  "performanceReview": {
+    "body": [
+      "尾巴虽然已经8岁，",
+      "但依旧保持董事长级别的高频巡查。",
+      "",
+      "现场表现：",
+      "上午楼上楼下跑酷，",
+      "喵叫指挥全屋秩序。",
+      "",
+      "同时严格遵守办公室纪律，",
+      "从不破坏家具设施。"
+    ],
+    "grade": "A",
+    "gradeLabel": "优秀",
+    "reason": [
+      "活力稳定",
+      "自律极强",
+      "责任感突出",
+      "具备优秀领导气质"
+    ]
+  },
+
+  "archivistNote": [
+    "第一次记录尾巴的时候，",
+    "我以为它只是一只停不下来的猫。",
+    "",
+    "后来我发现：",
+    "它像小马驹一样，",
+    "每天巡视自己的办公室。",
+    "",
+    "它很爱干净，",
+    "会认真给自己梳毛。",
+    "",
+    "甚至连显荣的日常管理，",
+    "它都会主动参与。",
+    "",
+    "这大概就是董事长的责任感。"
+  ],
+
+  "archivistSignature": "L",
+  "sealYear": "2026"
+}

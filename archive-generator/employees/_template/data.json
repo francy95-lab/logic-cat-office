@@ -1,0 +1,66 @@
+{
+  "templateVersion": "AFU_V1.0",
+  "employeeNo": "UC-XXXX",
+  "nameZh": "中文姓名",
+  "nameEn": "English Name",
+  "species": "Domestic Cat",
+  "department": "部门名称",
+  "position": "职位名称",
+  "joinDate": "YYYY.MM.DD",
+  "statusZh": "在职",
+  "statusEn": "ACTIVE",
+  "level": "Employee Level",
+  "portrait": "portrait.png",
+  "skills": [
+    {
+      "key": "observation",
+      "labelZh": "能力名称",
+      "score": 5
+    },
+    {
+      "key": "recovery",
+      "labelZh": "能力名称",
+      "score": 4
+    },
+    {
+      "key": "movement",
+      "labelZh": "能力名称",
+      "score": 3
+    },
+    {
+      "key": "initiative",
+      "labelZh": "能力名称",
+      "score": 2
+    },
+    {
+      "key": "selectiveHearing",
+      "labelZh": "能力名称",
+      "score": 1
+    }
+  ],
+  "tags": [
+    "性格标签一",
+    "性格标签二",
+    "性格标签三"
+  ],
+  "performanceReview": {
+    "body": [
+      "员工业绩评价第一行。",
+      "员工业绩评价第二行。"
+    ],
+    "grade": "A",
+    "gradeLabel": "优秀",
+    "reason": [
+      "评级原因第一行。",
+      "评级原因第二行。"
+    ]
+  },
+  "archivistNote": [
+    "档案管理员备注第一行。",
+    "档案管理员备注第二行。",
+    "",
+    "空字符串表示一个空行。"
+  ],
+  "archivistSignature": "L",
+  "sealYear": "YYYY"
+}
