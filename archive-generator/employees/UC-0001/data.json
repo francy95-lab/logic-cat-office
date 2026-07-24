@@ -9,59 +9,61 @@
   "joinDate": "2026.07.19",
   "statusZh": "在职",
   "statusEn": "ACTIVE",
-  "level": "S",
+  "level": "Founding Chairman",
   "portrait": "portrait.png",
 
   "skills": [
     {
-      "key": "humanObservation",
-      "labelZh": "人类观察能力",
+      "key": "observation",
+      "labelZh": "晨间跑酷能力",
       "score": 5
     },
     {
-      "key": "officePresence",
-      "labelZh": "办公室存在感",
+      "key": "recovery",
+      "labelZh": "皮筋狩猎能力",
       "score": 5
     },
     {
-      "key": "emotionalSupport",
-      "labelZh": "情绪支持能力",
+      "key": "movement",
+      "labelZh": "快速移动能力",
+      "score": 5
+    },
+    {
+      "key": "initiative",
+      "labelZh": "家具守序能力",
+      "score": 5
+    },
+    {
+      "key": "selectiveHearing",
+      "labelZh": "电视陪看专注度",
       "score": 4
-    },
-    {
-      "key": "selfEntertainment",
-      "labelZh": "自我娱乐能力",
-      "score": 5
     }
   ],
 
   "tags": [
-    "观察者",
-    "秩序维护者",
-    "低调领导者",
+    "董事长气场",
     "晨间跑酷王",
+    "小马驹体质",
+    "洁癖巡查员",
     "电视陪看派"
   ],
 
   "performanceReview": {
     "body": [
       "尾巴虽然已经8岁，",
-      "但依旧保持董事长级别的高频巡查。",
+      "但每日仍保持董事长级别的高频巡查。",
       "",
       "现场表现：",
-      "上午楼上楼下跑酷，",
-      "喵叫指挥全屋秩序。",
-      "",
-      "同时严格遵守办公室纪律，",
-      "从不破坏家具设施。"
+      "上午持续进行楼上楼下跑酷，",
+      "喵喵指挥全屋秩序，",
+      "且从不违反家具纪律。"
     ],
     "grade": "A",
     "gradeLabel": "优秀",
     "reason": [
-      "活力稳定",
-      "自律极强",
-      "责任感突出",
-      "具备优秀领导气质"
+      "活力稳定，",
+      "自律极强，",
+      "还能陪看电视。"
     ]
   },
 
@@ -71,15 +73,15 @@
     "",
     "后来我发现：",
     "它像小马驹一样，",
-    "每天巡视自己的办公室。",
+    "在家里跑来跑去，",
+    "却从不故意破坏任何东西。",
     "",
     "它很爱干净，",
-    "会认真给自己梳毛。",
+    "也会认真给自己梳毛。",
     "",
-    "甚至连显荣的日常管理，",
-    "它都会主动参与。",
-    "",
-    "这大概就是董事长的责任感。"
+    "甚至连显荣的屁股，",
+    "它都想顺手一起管理。",
+    ""
   ],
 
   "archivistSignature": "L",
