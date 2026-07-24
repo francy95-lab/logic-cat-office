@@ -43,9 +43,62 @@ await page.evaluate(async () => {
 
 const archivePages = page.locator('.archive-page');
 const count = await archivePages.count();
+const pngBuffers = [];
 for (let index = 0; index < count; index += 1) {
-  await archivePages.nth(index).screenshot({ path: resolve(outputDir, `${employeeNo}-page-${String(index + 1).padStart(2, '0')}.png`) });
+  const png = await archivePages.nth(index).screenshot({ path: resolve(outputDir, `${employeeNo}-page-${String(index + 1).padStart(2, '0')}.png`) });
+  pngBuffers.push(png);
 }
+
+const pdfPages = pngBuffers.map((png, index) => `
+  <section class="pdf-page">
+    <img src="data:image/png;base64,${png.toString('base64')}" alt="Archive page ${index + 1}">
+  </section>
+`).join('');
+
+await page.setContent(`
+  <!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <style>
+        @page { size: 1055px 1491px; margin: 0; }
+        * { box-sizing: border-box; }
+        html, body { width: 1055px; margin: 0; padding: 0; background: white; }
+        .pdf-page {
+          width: 1055px;
+          height: 1491px;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          break-after: page;
+          page-break-after: always;
+        }
+        .pdf-page:last-child {
+          break-after: auto;
+          page-break-after: auto;
+        }
+        .pdf-page img {
+          display: block;
+          width: 1055px;
+          height: 1491px;
+          margin: 0;
+          padding: 0;
+          object-fit: contain;
+        }
+      </style>
+    </head>
+    <body>${pdfPages}</body>
+  </html>
+`, { waitUntil: 'load' });
+
+await page.evaluate(async () => {
+  await Promise.all(Array.from(document.images, (image) => image.complete
+    ? Promise.resolve()
+    : new Promise((resolveImage, rejectImage) => {
+      image.addEventListener('load', resolveImage, { once: true });
+      image.addEventListener('error', rejectImage, { once: true });
+    })));
+});
 
 await page.pdf({ path: resolve(outputDir, `${employeeNo}-archive.pdf`), width: '1055px', height: '1491px', printBackground: true, preferCSSPageSize: true });
 await browser.close();
