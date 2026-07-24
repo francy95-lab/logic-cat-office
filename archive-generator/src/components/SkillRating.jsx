@@ -1,11 +1,11 @@
-const points = '10,1 12.9,6.8 19.3,7.7 14.6,12.2 15.7,18.6 10,15.6 4.3,18.6 5.4,12.2 .7,7.7 7.1,6.8';
+const starPath = 'M10 1.1 12.8 6.7 19.1 7.6 14.5 12.1 15.6 18.5 10 15.5 4.2 18.6 5.4 12.2.8 7.7 7.1 6.8Z';
 
-export default function SkillRating({ score, total = 5 }) {
+export default function SkillRating({ score, total = 5, variant = 'default' }) {
   return (
-    <div className="skill-rating" aria-label={`${score} / ${total} 星`}>
+    <div className={`skill-rating skill-rating--${variant}`} aria-label={`${score} / ${total} 星`}>
       {Array.from({ length: total }, (_, index) => (
         <svg viewBox="0 0 20 20" key={index} aria-hidden="true">
-          <polygon points={points} className={index < score ? 'is-filled' : ''} />
+          <path d={starPath} className={index < score ? 'is-filled' : ''} />
         </svg>
       ))}
     </div>

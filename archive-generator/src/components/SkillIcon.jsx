@@ -1,6 +1,14 @@
-const common = { fill: 'none', stroke: 'currentColor', strokeWidth: 2.4, strokeLinecap: 'round', strokeLinejoin: 'round' };
+const common = { fill: 'none', stroke: 'currentColor', strokeWidth: 2.75, strokeLinecap: 'round', strokeLinejoin: 'round' };
 
-export default function SkillIcon({ type }) {
+const page02ReferenceIcons = {
+  observation: new URL('../../reference/page02_eye.png', import.meta.url).href,
+  recovery: new URL('../../reference/page02_bed.png', import.meta.url).href,
+  movement: new URL('../../reference/page02_move.png', import.meta.url).href,
+  initiative: new URL('../../reference/page02_bag.png', import.meta.url).href,
+  selectiveHearing: new URL('../../reference/page02_ear.png', import.meta.url).href,
+};
+
+export default function SkillIcon({ type, variant = 'default' }) {
   const iconAliases = {
     humanObservation: 'observation',
     presence: 'observation',
@@ -10,6 +18,10 @@ export default function SkillIcon({ type }) {
     selfEntertainment: 'movement',
   };
   const iconType = iconAliases[type] ?? type;
+  if (variant === 'page02-reference' && page02ReferenceIcons[iconType]) {
+    return <img className="skill-icon skill-icon--reference" src={page02ReferenceIcons[iconType]} alt="" aria-hidden="true" />;
+  }
+
   const content = {
     observation: <><path {...common} d="M7 24c6-10 12-14 21-14s15 4 21 14c-6 10-12 14-21 14S13 34 7 24Z"/><circle {...common} cx="28" cy="24" r="7"/><circle cx="28" cy="24" r="3"/></>,
     recovery: <><path {...common} d="M7 34V19m0 10h42v8M12 29v-9h13c5 0 8 3 8 9"/><path {...common} d="M38 12h5l-5 6h6M29 7h5l-5 6h6"/></>,
